@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML5 Content & Forms</title>
+  <meta name="description" content="Demo page showcasing lists, tables, media, and an HTML5 form with native validation and accessibility features.">
+</head>
+<body>
+  <!-- Accessibility: skip link -->
+  <a href="#main">Skip to content</a>
+
+  <header>
+    <h1>Enhanced HTML5 Content & Mastering Forms</h1>
+    <p>Demonstrates lists, tables, media, and a fully structured HTML5 form using native validation.</p>
+  </header>
+
+  <main id="main">
+    <!-- Lists section -->
+    <section id="lists" aria-labelledby="lists-heading">
+      <h2 id="lists-heading">Using Lists Effectively</h2>
+      <p>Unordered list (for non-sequential items):</p>
+      <ul>
+        <li>Feature-driven development</li>
+        <li>Accessibility-first design</li>
+        <li>Progressive enhancement</li>
+      </ul>
+
+      <p>Ordered list (for sequences or steps):</p>
+      <ol>
+        <li>Plan the page structure</li>
+        <li>Create semantic markup</li>
+        <li>Test validations and accessibility</li>
+      </ol>
+    </section>
+
+    <!-- Table section -->
+    <section id="table" aria-labelledby="table-heading">
+      <h2 id="table-heading">Sample Table: Course Modules</h2>
+      <!-- Accessible table: caption, thead, tbody, scope -->
+      <table>
+        <caption>Course modules and durations</caption>
+        <thead>
+          <tr>
+            <th scope="col">Module</th>
+            <th scope="col">Description</th>
+            <th scope="col">Duration (weeks)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5 & Accessibility</td>
+            <td>Semantic markup, ARIA basics, accessible forms</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Forms & Validation</td>
+            <td>HTML5 input types, native validation, file uploads</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Media & Performance</td>
+            <td>Images, audio, video, lazy-loading concepts</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media section -->
+    <section id="media" aria-labelledby="media-heading">
+      <h2 id="media-heading">Embedding Media</h2>
+
+      <!-- Image with alt text and figcaption -->
+      <figure>
+        <img src="data:image/jpeg;base64,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" alt="City skyline at sunset with silhouetted buildings">
+        <figcaption>Example image.</figcaption>
+      </figure>
+
+      <!-- Audio: controls ensure user can play/pause -->
+      <figure>
+        <figcaption>Short audio sample (controls provided).</figcaption>
+        <audio controls>
+          <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+      </figure>
+
+      <!-- Video: controls and accessible captioning (if available) -->
+      <figure>
+        <video controls width="640">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <!-- <track> could be added for captions if a .vtt file is available -->
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Sample video "</figcaption>
+      </figure>
+    </section>
+
+    <!-- Form section -->
+    <section id="form" aria-labelledby="form-heading">
+      <h2 id="form-heading">Project Request Form</h2>
+
+      <!-- enctype needed for file uploads -->
+      <form action="/submit" method="post" enctype="multipart/form-data" aria-labelledby="form-heading">
+        <!-- Personal details grouped -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <!-- Name: required, minlength -->
+          <!-- required ensures browser will block empty submission -->
+          <p>
+            <label for="fullName">Full name</label><br>
+            <input id="fullName" name="fullName" type="text"
+                   placeholder="Your full name"
+                   required minlength="2" maxlength="80"
+                   autocomplete="name"
+                   aria-describedby="nameHelp">
+          </p>
+          <p id="nameHelp"><small>Enter your legal or preferred full name (min 2 characters).</small></p>
+
+          <!-- Student ID: readonly to show read-only fields -->
+          <p>
+            <label for="studentId">Student ID</label><br>
+            <input id="studentId" name="studentId" type="text" value="S12345678" readonly aria-readonly="true">
+            <small>Automatically assigned (readonly).</small>
+          </p>
+        </fieldset>
+
+        <!-- Contact grouped -->
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <!-- Email: type=email ensures basic format validation -->
+          <p>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email"
+                   placeholder="name@example.com"
+                   required autocomplete="email"
+                   aria-describedby="emailHelp">
+          </p>
+          <p id="emailHelp"><small>We will use this address to reach you.</small></p>
+
+          <!-- Phone: pattern for a simple international format -->
+          <p>
+            <label for="phone">Phone</label><br>
+            <input id="phone" name="phone" type="tel"
+                   placeholder="+254712345678"
+                   pattern="^\+?\d{7,15}$"
+                   title="Enter digits, optionally starting with + and country code (7–15 digits)."
+                   autocomplete="tel-national"
+                   aria-describedby="phoneHelp">
+          </p>
+          <p id="phoneHelp"><small>Optional — include country code (e.g., +254).</small></p>
+
+          <!-- Website: type=url validates URL syntax -->
+          <p>
+            <label for="website">Portfolio / Project URL</label><br>
+            <input id="website" name="website" type="url" placeholder="https://example.com" autocomplete="url">
+          </p>
+        </fieldset>
+
+        <!-- Project details grouped -->
+        <fieldset>
+          <legend>Project Details</legend>
+
+          <!-- Select: required -->
+          <p>
+            <label for="projectType">Project type</label><br>
+            <select id="projectType" name="projectType" required>
+              <option value="">— Choose —</option>
+              <option value="web">Web application</option>
+              <option value="mobile">Mobile app</option>
+              <option value="data">Data science / ML</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <!-- Date and time inputs -->
+          <p>
+            <label for="startDate">Preferred start date</label><br>
+            <input id="startDate" name="startDate" type="date" required>
+          </p>
+
+          <p>
+            <label for="duration">Estimated duration (weeks)</label><br>
+            <input id="duration" name="duration" type="number" min="1" max="52" step="1" value="4" required>
+          </p>
+
+          <!-- Range: demonstrates HTML5 range control -->
+          <p>
+            <label for="priority">Priority (1 = low, 5 = high)</label><br>
+            <input id="priority" name="priority" type="range" min="1" max="5" step="1" value="3" aria-valuemin="1" aria-valuemax="5">
+          </p>
+
+          <!-- Datalist for suggested technologies -->
+          <p>
+            <label for="tech">Preferred tech stack</label><br>
+            <input id="tech" name="tech" list="tech-list" placeholder="Type or choose">
+            <datalist id="tech-list">
+              <option value="HTML & CSS">
+              <option value="JavaScript (React)">
+              <option value="Node.js / Express">
+              <option value="Python (Django / Flask)">
+              <option value="Go (Golang)">
+            </datalist>
+          </p>
+
+          <!-- Message textarea with minlength -->
+          <p>
+            <label for="details">Project description</label><br>
+            <textarea id="details" name="details" rows="6"
+                      placeholder="Describe the project goals and key requirements..."
+                      required minlength="20" maxlength="2000"
+                      aria-describedby="detailsHelp"></textarea>
+          </p>
+          <p id="detailsHelp"><small>Minimum 20 characters. Provide a concise summary.</small></p>
+        </fieldset>
+
+        <!-- Attachments and preferences -->
+        <fieldset>
+          <legend>Attachments & Preferences</legend>
+
+          <!-- File input: accept only images and PDFs -->
+          <p>
+            <label for="attachment">Attach a design or brief (optional)</label><br>
+            <input id="attachment" name="attachment" type="file" accept="image/*,application/pdf">
+            <small>Accepted: images or PDF.</small>
+          </p>
+
+          <!-- Radio group: contact preference -->
+          <p>Preferred contact method:</p>
+          <p>
+            <input type="radio" id="contactEmail" name="contactPref" value="email" checked>
+            <label for="contactEmail">Email</label>
+          </p>
+          <p>
+            <input type="radio" id="contactPhone" name="contactPref" value="phone">
+            <label for="contactPhone">Phone</label>
+          </p>
+
+          <!-- Terms: required checkbox -->
+          <p>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to be contacted regarding this request.</label>
+          </p>
+        </fieldset>
+
+        <!-- Submit controls -->
+        <p>
+          <button type="submit">Submit Request</button>
+          <button type="reset">Reset</button>
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025-09-02">2025</time> — Enhanced Forms Demo</p>
+  </footer>
+</body>
+</html>
